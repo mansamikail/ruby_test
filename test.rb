@@ -22,15 +22,16 @@ s = gets.chomp
 puts 'second number :'
 b = gets.chomp
 
-    if s == '*'
-      puts multiply(a, b)
-    elsif s == '-'
-      puts minus(a, b)
-    elsif s == '/'
-      puts divide(a, b)
-    elsif s == '+'
-      puts plus(a, b)
-    else
-      puts 'invalid'
-    end
+case s
+when '*'
+  puts multiply(a, b)
+when '-'
+  puts minus(a, b)
+when '/'
+  puts divide(a, b)
+when '+'
+  puts plus(a, b)
+else
+  puts 'invalid'
+end
 puts
